@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { navLinks } from "../utilities/NavDB";
 import AdminNavbar from './AdminNavbar';
 import Icon from '@material-tailwind/react/Icon';
-import H6 from '@material-tailwind/react/Heading6';
+
 
 export default function Sidebar() {
     const [showSidebar, setShowSidebar] = useState('-left-64');
@@ -28,7 +28,8 @@ export default function Sidebar() {
                         rel="noreferrer"
                         className="mt-2 text-center w-full inline-block"
                     >
-                        <H6 color="blue">Versuspay</H6>
+                       
+                        <h1 className="text-bground-blue font-[600] text-3xl">Versuspay</h1>
                     </a>
                     <div className="flex flex-col">
                         <hr className="my-4 min-w-full" />
@@ -65,7 +66,7 @@ export default function Sidebar() {
                                 <Link
                                     to={link.path} onClick={() => setActiveNav(path)}
                                     key={link.id}
-                                    className={`flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg ${activeNav === path && "bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"}`}>
+                                    className={`flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg ${activeNav === path && "bg-bground-blue text-white shadow-md"}`}>
                                     <Icon name={link.icon} size="2xl" />
                                     {link.title}
                                 </Link>
