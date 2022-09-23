@@ -1,11 +1,17 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { navLinks } from "../utilities/NavDB";
 import AdminNavbar from './AdminNavbar';
 import Icon from '@material-tailwind/react/Icon';
 import H6 from '@material-tailwind/react/Heading6';
 
 export default function Sidebar() {
     const [showSidebar, setShowSidebar] = useState('-left-64');
+     const location = useLocation();
+     const {pathname} = location;
+     const [activeNav, setActiveNav] = useState(pathname);
+     
+
     return (
         <>
             <AdminNavbar
@@ -28,103 +34,18 @@ export default function Sidebar() {
                         <hr className="my-4 min-w-full" />
 
                         <ul className="flex-col min-w-full flex list-none">
-                            <li className="rounded-lg mb-4">
-                                <NavLink
-                                    to="/dashboard"
-                                    exact
-                                    className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
-                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
-                                >
-                                    <Icon name="dashboard" size="2xl" />
-                                    Dashboard
-                                </NavLink>
-                            </li>
-                            <li className="rounded-lg mb-4">
-                                <NavLink
-                                    to="/dashboard/addincident"
-                                    exact
-                                    className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
-                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
-                                >
-                                    <Icon name="add" size="2xl" />
-                                   Add Incident
-                                </NavLink>
-                            </li>
-                            <li className="rounded-lg mb-4">
-                                <NavLink
-                                    to="/dashboard/manageincident"
-                                    exact
-                                    className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
-                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
-                                >
-                                    <Icon name="edit" size="2xl" />
-                                   Manage Incident
-                                </NavLink>
-                            </li>
-                            <li className="rounded-lg mb-4">
-                                <NavLink
-                                    to="/dashboard/incidentlist"
-                                    exact
-                                    className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
-                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
-                                >
-                                    <Icon name="toc" size="2xl" />
-                                   Incident List
-                                </NavLink>
-                            </li>
-                            <li className="rounded-lg mb-4">
-                                <NavLink
-                                    to="/dashboard/addrecipient"
-                                    exact
-                                    className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
-                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
-                                >
-                                    <Icon name="add" size="2xl" />
-                                   Add Recipient
-                                </NavLink>
-                            </li>
-                            <li className="rounded-lg mb-4">
-                                <NavLink
-                                    to="/dashboard/recipientlist"
-                                    exact
-                                    className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
-                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
-                                >
-                                    <Icon name="toc" size="2xl" />
-                                   Recipient List
-                                </NavLink>
-                            </li>
-                            <li className="rounded-lg mb-4">
-                                <NavLink
-                                    to="/dashboard/managerecipient"
-                                    exact
-                                    className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
-                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
-                                >
-                                    <Icon name="edit" size="2xl" />
-                                   Manage Recipient
-                                </NavLink>
-                            </li>
+                           
+                            {navLinks.map((link) => 
+          <NavItem link={link} key={link.id} activeNav={activeNav} setActiveNav={setActiveNav} path={link.path} />
+        )}
                             <li className="rounded-lg mb-2">
-                                <NavLink
-                                    to="/dashboard/settings"
-                                    className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
-                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
-                                >
-                                    <Icon name="settings" size="2xl" />
-                                    Settings
-                                </NavLink>
-                            </li>
-                            
-                            <li className="rounded-lg mb-2">
-                                <NavLink
+                                <Link
                                     to="/logout"
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
-                                    activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                 >
                                     <Icon name="logout" size="2xl" />
                                     Log Out
-                                </NavLink>
+                                </Link>
                             </li>
                             
                             
@@ -138,4 +59,17 @@ export default function Sidebar() {
             </div>
         </>
     );
+  function NavItem({link,  activeNav, setActiveNav, path}) {
+    return (
+        <li className="rounded-lg mb-2">
+                                <Link
+                                    to={link.path} onClick={() => setActiveNav(path)}
+                                    key={link.id}
+                                    className={`flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg ${activeNav === path && "bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"}`}>
+                                    <Icon name={link.icon} size="2xl" />
+                                    {link.title}
+                                </Link>
+                            </li>
+    )
+  }  
 }
