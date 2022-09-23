@@ -1,5 +1,6 @@
 import StatusCard from 'components/StatusCard';
 import TableCard from 'components/TableCard';
+import TitleHeading from 'components/TitleHeading';
 
 
 export default function Dashboard() {
@@ -32,12 +33,9 @@ export default function Dashboard() {
                         />
                         <StatusCard
                             color="purple"
-                            icon="paid"
-                            title="Sales"
-                            amount="924"
-                            percentage="1.10"
-                            percentageIcon="arrow_downward"
-                            percentageColor="orange"
+                            icon="login"
+                            title="Last Log in"
+                            amount="Sep 23, 2022"
                             date="Since yesterday"
                         />
                         <StatusCard
@@ -55,9 +53,10 @@ export default function Dashboard() {
             </div>
 
             <div className="px-3 md:px-8 h-auto">
+                
                 <div className="container mx-auto max-w-full">
-                   
-                    <div className="grid grid-cols-1 px-4 mb-16">
+                  <div className="mt-10 "><TitleHeading heading="Incident List"/></div> 
+                    <div className="grid grid-cols-1 px-4 mb-16 ">
                         <TableCard />
                     </div>
                 

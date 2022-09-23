@@ -1,8 +1,8 @@
 import Card from '@material-tailwind/react/Card';
 import CardBody from '@material-tailwind/react/CardBody';
-import ViewIncident from './ViewIncident';
+import EditRecipient from './EditRecipient';
 
-export default function CardTable() {
+export default function ManageRecipient() {
     return (
         <Card>
            
@@ -15,23 +15,20 @@ export default function CardTable() {
                                    Date
                                 </th>
                                 <th className="px-2 text-purple-500 align-middle border-b border-solid border-gray-200 py-3 text-sm whitespace-nowrap font-light text-left">
-                                    Incident
+                                    Name
                                 </th>
                                 <th className="px-2 text-purple-500 align-middle border-b border-solid border-gray-200 py-3 text-sm whitespace-nowrap font-light text-left">
-                                    Status
-                                </th>
-                               
-                                <th className="px-2 text-purple-500 align-middle border-b border-solid border-gray-200 py-3 text-sm whitespace-nowrap font-light text-left">
-                                    Completion
+                                    Email address
                                 </th>
                             </tr>
                         </thead>
                         <tbody>
-                             <ViewIncident incident="No incidents" date="23rd, September 2022" status="No issue" color="green" number={100} />
-                            <ViewIncident incident="No incidents" date="22nd, September 2022" status="No issue" color="green" number={100} />
-                            <ViewIncident incident="No incidents" date="21st, September 2022" status="No issue" color="green" number={100} />
-                            <ViewIncident incident="No incidents" date="20th, September 2022" status="No issue" color="green" number={100} />
-                            <ViewIncident incident="One incident" date="19th, September 2022" status="Unresolved Issue" color="red" number={10} />
+                             <EditRecipient date="23rd, September 2022" name="Feyi Alabi" email="hbhcbjs@gmail.com" />
+                             <EditRecipient date="22nd, September 2022" name="Ola Toba" email="oooohh@gmail.com"/>
+                             <EditRecipient date="21st, September 2022" name="Tobi Adeola" email="ffff@gmail.com"/>
+                             <EditRecipient date="20th, September 2022" name="Uche Njoku" email="ggg@gmail.com" />
+                             <EditRecipient date="19th, September 2022" name="Tife Adewale" email="gddd@gmail.com" />
+                            
                         </tbody>
                     </table>
                 </div>

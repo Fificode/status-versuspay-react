@@ -1,26 +1,13 @@
 import Card from '@material-tailwind/react/Card';
-import CardHeader from '@material-tailwind/react/CardHeader';
 import CardBody from '@material-tailwind/react/CardBody';
-import Button from '@material-tailwind/react/Button';
 import Input from '@material-tailwind/react/Input';
 import Textarea from '@material-tailwind/react/Textarea';
+import TitleHeading from './TitleHeading';
 
 export default function SettingsForm() {
     return (
         <Card>
-            <CardHeader color="purple" contentPosition="none">
-                <div className="w-full flex items-center justify-between">
-                    <h2 className="text-white text-2xl">My Account</h2>
-                    <Button
-                        color="transparent"
-                        buttonType="link"
-                        size="lg"
-                        style={{ padding: 0 }}
-                    >
-                        Settings
-                    </Button>
-                </div>
-            </CardHeader>
+            <TitleHeading heading="My Account" subheading="Settings" />
             <CardBody>
                 <form>
                     <h6 className="text-purple-500 text-sm mt-3 mb-6 font-light uppercase">

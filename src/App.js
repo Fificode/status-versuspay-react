@@ -8,7 +8,7 @@ import Settings from 'pages/Settings';
 import IncidentList from 'pages/IncidentList';
 import Footer from 'components/Footer';
 import RecipientList from 'pages/RecipientList'
-import ManageRecipient from 'pages/ManageRecipient';
+import ManageRecipients from 'pages/ManageRecipients';
 import Login from 'pages/Login';
 import Report from 'pages/Report';
 
@@ -27,7 +27,7 @@ function App() {
                     <Route exact path="/dashboard/addincident" element={<AddIncident/>} />
                     <Route exact path="/dashboard/addrecipient" element={<AddRecipient/>} />
                     <Route exact path="/dashboard/manageincident" element={<ManageIncident/>} />
-                    <Route exact path="/dashboard/managerecipient" element={<ManageRecipient/>} />
+                    <Route exact path="/dashboard/managerecipient" element={<ManageRecipients/>} />
                     <Route exact path="/dashboard/settings" element={<Settings/>} />
                     <Route exact path="/dashboard/incidentlist" element={<IncidentList/>} />
                     <Route exact path="/dashboard/recipientlist" element={<RecipientList/>} />
