@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/versuspaylogo.svg'
+import logo from '../assets/img/versuspaylogo.svg'
 const Login = () => {
   return (
     <>

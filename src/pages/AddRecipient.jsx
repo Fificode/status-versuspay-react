@@ -3,8 +3,8 @@ import React from 'react'
 const AddRecipient = () => {
   return (
     <>
-      <div>
-       <div className='md:absolute md:left-[280px] md:mt-[30px] mt-[80px] my-[30px]'>
+      <div className="md:ml-64">
+       <div className=' md:mt-[30px] mt-[80px] my-[30px]'>
       <h1 className='text-[28px] md:text-[40px] font-[600] text-center'>Add Recipient</h1>
       <form >
       <div className="flex flex-col items-center">

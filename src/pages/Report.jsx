@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Status from '../components/Status'
 import PastIncidents from '../components/PastIncidents'
-import logo from '../assets/versuspaylogo.svg'
+import logo from '../assets/img/versuspaylogo.svg'
 
 const Report = () => {
      const [pastIncidents, setPastIncidents] = useState(false);

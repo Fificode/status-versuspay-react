@@ -30,7 +30,7 @@ export default function Sidebar() {
                         <ul className="flex-col min-w-full flex list-none">
                             <li className="rounded-lg mb-4">
                                 <NavLink
-                                    to="/"
+                                    to="/dashboard"
                                     exact
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
@@ -41,7 +41,7 @@ export default function Sidebar() {
                             </li>
                             <li className="rounded-lg mb-4">
                                 <NavLink
-                                    to="/addincident"
+                                    to="/dashboard/addincident"
                                     exact
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
@@ -52,7 +52,7 @@ export default function Sidebar() {
                             </li>
                             <li className="rounded-lg mb-4">
                                 <NavLink
-                                    to="/manageincident"
+                                    to="/dashboard/manageincident"
                                     exact
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
@@ -63,7 +63,7 @@ export default function Sidebar() {
                             </li>
                             <li className="rounded-lg mb-4">
                                 <NavLink
-                                    to="/incidentlist"
+                                    to="/dashboard/incidentlist"
                                     exact
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
@@ -74,7 +74,7 @@ export default function Sidebar() {
                             </li>
                             <li className="rounded-lg mb-4">
                                 <NavLink
-                                    to="/addrecipient"
+                                    to="/dashboard/addrecipient"
                                     exact
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
@@ -85,7 +85,7 @@ export default function Sidebar() {
                             </li>
                             <li className="rounded-lg mb-4">
                                 <NavLink
-                                    to="/recipientlist"
+                                    to="/dashboard/recipientlist"
                                     exact
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
@@ -96,7 +96,7 @@ export default function Sidebar() {
                             </li>
                             <li className="rounded-lg mb-4">
                                 <NavLink
-                                    to="/managerecipient"
+                                    to="/dashboard/managerecipient"
                                     exact
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
@@ -107,7 +107,7 @@ export default function Sidebar() {
                             </li>
                             <li className="rounded-lg mb-2">
                                 <NavLink
-                                    to="/settings"
+                                    to="/dashboard/settings"
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                 >
@@ -128,19 +128,7 @@ export default function Sidebar() {
                             </li>
                             
                             
-                            <li className="px-4 rounded-lg mb-2 text-gray-700">
-                                <a
-                                    href="https://demos.creative-tim.com/material-tailwind-kit-react/#/login"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="flex items-center gap-4 text-sm font-light py-3"
-                                >
-                                    <Icon name="fingerprint" size="2xl" />
-                                    Login
-                                </a>
-                            </li>
                             
-                           
                             
                         </ul>
 

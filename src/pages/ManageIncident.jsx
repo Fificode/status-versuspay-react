@@ -2,7 +2,7 @@ import React from 'react'
 
 const ManageIncident = () => {
   return (
-    <div>ManageIncident</div>
+    <div className="md:ml-64">ManageIncident</div>
   )
 }
 

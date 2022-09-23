@@ -2,7 +2,7 @@ import React from 'react'
 
 const ManageRecipient = () => {
   return (
-    <div>ManageRecipient</div>
+    <div className="md:ml-64">ManageRecipient</div>
   )
 }
 
