@@ -10,13 +10,13 @@ module.exports = {
         },
         extend: {},
          colors: {
+            'bground-green': '#32cd32',
 'bground-blue' : '#3f00ff',
-'white' : '#ffffff',
-'green': '#32CD32',
-'black': '#000000',
+
+'black': "#000000",
 'grey' : 'rgba(238, 241, 246, 0.3)',
 'gray' : '#808080',
-'golden-yellow' : '#ffc000',
+'bg-golden-yellow' : '#ffc000',
     },
     },
     variants: {

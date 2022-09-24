@@ -7,7 +7,7 @@ import TitleHeading from './TitleHeading';
 export default function SettingsForm() {
     return (
         <Card>
-            <TitleHeading heading="My Account" subheading="Settings" />
+            <div className="mb-30"><TitleHeading heading="My Account" subheading="Settings" /></div>
             <CardBody>
                 <form>
                     <h6 className="text-purple-500 text-sm mt-3 mb-6 font-light uppercase">

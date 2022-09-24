@@ -5,10 +5,10 @@ const Incident = ({postsToRender}) => {
     <div>
        
       {postsToRender.map((post, index) => (
-        <div className="my-[20px]" key={index}> 
-    <h1 className="text-[18px] font-[500] px-[30px] py-[10px]">{post.date}</h1>
-    <div className="flex justify-center"><div className='border-b-[1px] border-solid border-b-gray w-[85%] md:w-[93%] lg:w-[95%] xl:w-[96%] 2xl:w-[98%] px-[20px]'></div></div>
-    <p className='text-[16px] font-[400] px-[30px] py-[10px]'>{post.title}</p>
+        <div className="my-5" key={index}> 
+    <h1 className="text-xl px-8 py-3">{post.date}</h1>
+    <div className="flex justify-center px-10"><div className='border-b border-solid border-grey w-full  '></div></div>
+    <p className='text-sm px-5 py-5'>{post.title}</p>
     </div>
       
       ))}
