@@ -10,11 +10,11 @@ const AddIncident = () => {
       <div className="flex flex-col items-center  ">
 <div className="flex flex-col w-full p-6">
   <label className="text-xl  font-[500] py-2" htmlFor='Date'>Date</label>
-  <input type="date" name='Incident date' placeholder='Incident date' className='outline-bground-blue text-l px-5 py-3 border-1 border-solid rounded-2' />
+  <input type="date" name='Incident date' placeholder='Incident date' className='w-full outline-bground-blue text-l px-5 py-3 border-1 border-solid rounded-2' />
   </div>
 <div className="flex flex-col w-full p-6">
   <label className="text-xl  font-[500] py-2" htmlFor='Description'>Description</label>
-  <input type="text" name='Description' placeholder='Incident description' className=' outline-bground-blue text-l px-5 py-3 border-1 border-solid rounded-2 ' />
+  <input type="text" name='Description' placeholder='Incident description' className='w-full outline-bground-blue text-l px-5 py-3 border-1 border-solid rounded-2 ' />
  
 </div>
 
