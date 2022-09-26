@@ -35,7 +35,7 @@ const Report = () => {
             </h2>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center flex-wrap  mb-10">
-          <Status title="High-Performance Edge Network" status="Normal"/>
+          <Status title="High-Performance Edge Network" status="Normal" />
           <Status title="Standard Edge Network" status="Normal"/>
           <Status title="Versuspay Application UI" status="Normal"/>
           <Status title="Packages" status="Normal"/>

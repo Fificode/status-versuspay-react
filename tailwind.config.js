@@ -13,7 +13,6 @@ module.exports = {
          colors: {
             'bground-green': '#32cd32',
 'bground-blue' : '#3f00ff',
-
 'black': "#000000",
 'grey' : 'rgba(238, 241, 246, 0.3)',
 'gray' : '#808080',
