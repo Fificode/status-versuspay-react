@@ -443,7 +443,7 @@ iframe,
 embed,
 object {
   display: block;
-  /* vertical-align: middle; */
+  vertical-align: middle;
 }
 /**
  * Constrain images and videos to the parent width and preserve
@@ -682,13 +682,6 @@ video {
 .bg-bground-blue{
 	--tw-bg-opacity: 1;
 	background-color: rgba(63, 0, 255, var(--tw-bg-opacity));
-}
-.bg-bground-green{
-	--tw-bg-opacity: 1;
-	background-color: #32cd32;
-}
-.rounded-hf{
-	border-radius: 50%;
 }
 .py-6{
 	padding-top: 1.5rem;
@@ -1234,7 +1227,7 @@ iframe,
 embed,
 object {
   display: block;
-  /* vertical-align: middle; */
+  vertical-align: middle;
 }
 /**
  * Constrain images and videos to the parent width and preserve

@@ -25,6 +25,12 @@ export default function ManageCard() {
                                 <th className="px-2 text-purple-500 align-middle border-b border-solid border-gray-200 py-3 text-sm whitespace-nowrap font-light text-left">
                                     Completion
                                 </th>
+                                <th className="px-2  border-b border-solid border-gray-200 py-3 ">
+                                   
+                                </th>
+                                <th className="px-2  border-b border-solid border-gray-200 py-3 ">
+                                   
+                                </th>
                             </tr>
                         </thead>
                         <tbody>
