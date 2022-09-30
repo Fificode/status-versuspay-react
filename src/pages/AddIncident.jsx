@@ -3,8 +3,8 @@ import React from 'react'
 const AddIncident = () => {
   return (
     <>
-    <div className="md:ml-64">
-       <div className='mt-6'>
+    <div className="md:ml-64 bg-gray-100">
+       <div className='pt-6'>
       <h1 className='text-4xl font-[600] text-center'>Add Incident</h1>
       <form >
       <div className="flex flex-col items-center  ">

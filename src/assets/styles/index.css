@@ -14,3 +14,15 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import '@material-tailwind/react/tailwind.css';
+
+@layer components {
+    .greencolor {
+            @apply bg-bground-green;
+        }
+.borderblack{
+    @apply border-black border-2
+}
+.rounded-hf{
+    @apply rounded-[50%] 
+}
+}

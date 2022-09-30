@@ -14,14 +14,14 @@ const Login = () => {
               <form >
                 <div className="py-3 flex flex-col">
                   <label htmlFor="email" className='text-l font-[500] pb-1'>Email</label>
-                  <input type="email" name="email" id="email" autoComplete="off" value="" required  className='w-full px-3 py-2 border border-black border-solid outline-bground-blue rounded' placeholder='Enter email address' />
+                  <input type="email" name="email" id="email" autoComplete="off" value="" required  className='w-full px-3 py-2 border-black border-2 border-solid outline-bground-blue rounded text-sm' placeholder='Enter email address' />
                 </div>
                 <div className="py-3 flex flex-col">
                   <label htmlFor="password" className='text-l font-[500] pb-1'>Password</label>
-                  <input type="password" name="password" id="password"  required className='w-full px-3 py-2 border border-black border-solid outline-bground-blue rounded' placeholder='Enter password' />
+                  <input type="password" name="password" id="password"  required className='w-full px-3 py-2  border-black border-2  border-solid outline-bground-blue rounded text-sm' placeholder='Enter password' />
                 </div>
                 <div className="py-3 flex justify-center">
-                  <button type="submit" className='w-full px-4 py-3 text-white bg-bground-blue rounded text-center text-[17px] font-[500]'>Log in</button>
+                  <button type="submit" className='w-full px-4 py-2 text-white bg-bground-blue rounded text-center text-sm '>Log in</button>
                 </div>
               </form>
             </div>

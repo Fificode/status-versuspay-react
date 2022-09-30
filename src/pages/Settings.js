@@ -1,7 +1,7 @@
 import SettingsForm from 'components/SettingsForm';
 
 
-export default function Dashboard() {
+export default function Settings() {
     return (
         <>
         <div className="md:ml-64 mt-40">

@@ -1,14 +1,16 @@
-import Card from '@material-tailwind/react/Card';
-import CardBody from '@material-tailwind/react/CardBody';
-import Input from '@material-tailwind/react/Input';
-import Textarea from '@material-tailwind/react/Textarea';
+// import Card from '@material-tailwind/react/Card';
+// import CardBody from '@material-tailwind/react/CardBody';
+// import Input from '@material-tailwind/react/Input';
+// import Textarea from '@material-tailwind/react/Textarea';
 import TitleHeading from './TitleHeading';
 
 export default function SettingsForm() {
     return (
-        <Card>
-            <div className=""><TitleHeading heading="My Account" subheading="Settings" /></div>
-            <CardBody>
+        <div>
+            <div className="">
+                <TitleHeading heading="My Account" subheading="Settings" />
+                </div>
+            {/* <CardBody>
                 <form>
                     <h6 className="text-purple-500 text-sm mt-3 mb-6 font-light uppercase">
                         User Information
@@ -85,7 +87,7 @@ export default function SettingsForm() {
                         <Textarea color="purple" placeholder="About Me" />
                     </div>
                 </form>
-            </CardBody>
-        </Card>
+            </CardBody> */}
+        </div>
     );
 }
