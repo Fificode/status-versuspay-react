@@ -3,7 +3,7 @@ import React from 'react'
 const Status = ({title, status}) => {
   return (
     <>
-    <div className='border border-solid border-gray w-full  rounded-l mt-5'>
+    <div className='border border-solid border-gray w-full  rounded-sm mt-5'>
        <div className="flex justify-between px-2 py-2">
         <div className="flex flex-col mx-1">
         <div className="flex flex-row ">
@@ -17,7 +17,7 @@ const Status = ({title, status}) => {
  <p className='px-1 pt-1 text-sm font-[400]'>{status}</p>
 </div>
  <div className="flex flex-col items-center pt-3">
-      <div className="flex flex-row justify-center items-center bg-bground-green rounded-hf border border-white w-7 h-7">
+      <div className="flex flex-row justify-center items-center bg-bground-green rounded-hf  w-7 h-7">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="white" className="w-4 h-4 ">
   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
 </svg>

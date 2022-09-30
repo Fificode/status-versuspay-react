@@ -29,7 +29,7 @@ const loopWithSlice = (start, end) => {
  <Incident postsToRender={postsToShow} />
  <div className="flex justify-end">
   <div>
-      <button onClick={handleShowMorePosts} className="px-3 py-2 bg-bground-blue rounded-sm text-white outline-none mx-5 my-2 mb-3">Load more</button>
+      <button onClick={handleShowMorePosts} className="px-3 py-2 bg-bground-blue rounded-sm text-white outline-none border-none mx-5 my-2 mb-3">Load more</button>
       </div>
       </div>
 </>

@@ -18,7 +18,7 @@ const Report = () => {
         </div>
         <div className="px-4">
         <div className="flex justify-center mt-5">
-        <div className="bg-bground-green p-1 w-full rounded flex justify-start items-center">
+        <div className="bg-bground-green w-full rounded flex justify-start items-center">
             <div className="flex flex-row">
            <div className="flex items-center pl-3">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="white" className="w-6 h-6">
@@ -47,7 +47,7 @@ const Report = () => {
         </div>
       <div className="flex justify-end">
         <div>
-      {showButton && <button className='px-3 py-2 bg-bground-blue rounded-sm text-white  outline-none mx-5 my-2 mb-5' onClick={viewPastIncidents}>View Incident History</button>}
+      {showButton && <button className='px-3 py-2 bg-bground-blue rounded-sm text-white  outline-none border-none mx-5 my-2 mb-5' onClick={viewPastIncidents}>View Incident History</button>}
        </div>
       </div>
         <div className="">
