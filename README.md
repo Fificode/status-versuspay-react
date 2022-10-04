@@ -1,8 +1,10 @@
 # [Material Tailwind Dashboard React](https://demos.creative-tim.com/material-tailwind-dashboard-react/#/?ref=readme-mtdr)
 
+Live link:  https://status-versuspay.netlify.app/
+
 ![version](https://img.shields.io/badge/version-1.1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-tailwind-dashboard-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-tailwind-dashboard-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-tailwind-dashboard-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-tailwind-dashboard-react/issues?q=is%3Aissue+is%3Aclosed)
 
-![Image](https://s3.amazonaws.com/creativetim_bucket/products/488/original/opt_md_tailwindreact_thumbnail.jpg)
+
 
 Material Tailwind Dashboard React is a _free_ Admin Template based on two popular front-end technologies: _Tailwind CSS & React_. It was built to simplify the developer's work and is comes with a fresh design inspired by Google's Material Design. All its components are built to fit perfectly with each other, while aligning to the material concepts.
 
